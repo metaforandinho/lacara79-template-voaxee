@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Consumindo API </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1 id="titulo">Consumindo API</h1>
+
+  <ion-list>
+    <ion-item *ngFor="let dados of lista; index as i">
+      <ion-label>{{i+1}} - {{ dados.nome }} - {{ dados.idade }} </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
